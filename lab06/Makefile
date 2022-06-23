@@ -8,4 +8,4 @@ main.o: main.c
 	gcc -c main.c
 
 clear:
-	rm -f programa *.c
+	rm -f programa *.c *.o
