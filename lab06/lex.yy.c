@@ -362,7 +362,7 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[15] =
     {   0,
-        0,    0,    9,    8,    7,    5,    3,    4,    6,    1,
+        0,    0,    9,    8,    7,    5,    4,    3,    6,    1,
         0,    2,    2,    0
     } ;
 
@@ -445,9 +445,11 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "test04.l"
 #line 2 "test04.l"
+int flag_operador1=0,flag_operador2=0;
 void evaluate();
-#line 450 "lex.yy.c"
-#line 451 "lex.yy.c"
+float operador1=0, operador2=0, respuesta=0;
+#line 452 "lex.yy.c"
+#line 453 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -664,9 +666,9 @@ YY_DECL
 		}
 
 	{
-#line 6 "test04.l"
+#line 8 "test04.l"
 
-#line 670 "lex.yy.c"
+#line 672 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -725,46 +727,80 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "test04.l"
+#line 9 "test04.l"
 { printf("numero entero\n");}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 8 "test04.l"
-{ printf("numero flotante\n");}
+#line 10 "test04.l"
+{
+    if (flag_operador1 == 0){
+        operador1 = atof(yytext);
+        flag_operador1 = 1;
+        printf("operador 1: %0.2f\n", operador1);
+    }
+    else if(flag_operador2 == -1 || flag_operador2 == 1 || flag_operador2 == 2 || flag_operador2 == 3){
+        operador2 = atof(yytext);
+        flag_operador2 = 1;
+        printf("operador 2: %0.2f\n", operador2);
+    }
+    if((flag_operador1 == 1) && (flag_operador2 == 1)) {
+        flag_operador1 = 0;
+        flag_operador2 = 0;
+    }
+    }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 9 "test04.l"
-{ printf("es suma\n");}
+#line 26 "test04.l"
+{
+    printf("es resta\n");
+    flag_operador2 = -1;
+    }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 10 "test04.l"
-{ printf("es resta\n");}
+#line 30 "test04.l"
+{
+    flag_operador2 = 1;
+    printf("es suma\n");
+    }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 11 "test04.l"
-{ printf("es multi\n");}
+#line 34 "test04.l"
+{
+    printf("es multiplicacion\n");
+    flag_operador2 = 2;
+    }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 12 "test04.l"
-{ printf("es divis\n");}
+#line 38 "test04.l"
+{
+    printf("es division\n");
+    flag_operador2 = 3;
+    }
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 14 "test04.l"
-{ evaluate(); }
+#line 44 "test04.l"
+{
+    evaluate();
+    printf(">>>>>>>>>>>>> %4.2f\n",operador2);
+    if((flag_operador1 == 1) && (flag_operador2 == 1)) {
+    flag_operador1 = 0;
+    flag_operador2 = 0;
+}
+}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 15 "test04.l"
+#line 52 "test04.l"
 ECHO;
 	YY_BREAK
-#line 768 "lex.yy.c"
+#line 804 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1769,7 +1805,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 15 "test04.l"
+#line 52 "test04.l"
 
 int yywrap(){}
 int main(){
@@ -1777,5 +1813,34 @@ yylex();
 return 0;
 }
 void evaluate(){
-printf("nada que evaluar\n");
+    printf("%4.2f\n",operador1);
+    switch(flag_operador2){
+        case 1:
+            respuesta = operador1 + operador2;
+            printf("es suma %0.2f\n",operador1);
+            break;
+        case -1:
+            respuesta = operador1 - operador2;
+            printf("es  sustraccion \n");
+            break;
+        case 2:
+            respuesta = operador1 * operador2;
+            printf("es multiplicacion \n");
+            break;
+        case 3:
+            if(operador2 == 0){
+                printf("error division por cero\n");
+            }
+            else{
+                respuesta = operador1 / operador2;
+                printf("es division \n");
+            }
+            break;
+    }
+    flag_operador1 = 0;
+    flag_operador2 = 0;
+    operador1 = 0;
+    operador2 = 0;
+
+    printf("respuesta es: %0.2f\n", respuesta);
 }
