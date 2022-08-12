@@ -1,0 +1,3 @@
+bison -dy ejemplo2_slides.y 
+flex ejemplo2_slides.l 
+gcc -o ejem2_s lex.yy.c y.tab.c -ll

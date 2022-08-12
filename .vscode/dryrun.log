@@ -1,8 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/ncnc/Desktop/teo_comp'
-rm -f main.c 
-lex  -t main.l > main.c
-gcc -c main.c
-cc   main.o   -o main
-make: Leaving directory '/home/ncnc/Desktop/teo_comp'
+make: Entering directory '/home/ncnc/teoria_comp/TEO_COMP'
+make: Leaving directory '/home/ncnc/teoria_comp/TEO_COMP'
  
+make: *** No targets specified and no makefile found.  Stop.
+

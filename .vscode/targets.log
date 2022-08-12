@@ -1,5 +1,5 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'main', needed by 'all'.  Stop.
+make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
@@ -8,7 +8,7 @@ make: *** No rule to make target 'main', needed by 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 22 19:41:48 2022
+# Make data base, printed on Fri Aug 12 18:26:25 2022
 
 # Variables
 
@@ -25,15 +25,13 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f8acc148-c2db-47d6-8b0d-7efdf9f1d685.sock
+LC_NAME = agr_PE
 # environment
-LC_NAME = en_US.UTF-8
-# environment
-LC_NUMERIC = en_US.UTF-8
+LC_NUMERIC = agr_PE
 # environment
 VSCODE_CWD = /home/ncnc
 # environment
-LC_ADDRESS = en_US.UTF-8
+LC_ADDRESS = agr_PE
 # default
 MAKE_COMMAND := make
 # environment
@@ -43,29 +41,27 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/104/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/ncnc/Desktop/teo_comp
+PWD = /home/ncnc/teoria_comp/TEO_COMP
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/ncnc/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/ncnc/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.PWS2N1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Z8CZQ1
 # default
 .LOADED := 
 # default
@@ -73,9 +69,7 @@ XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.PWS2N1
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/ncnc/Desktop/teo_comp
-# environment
-VSCODE_PIPE_LOGGING = true
+CURDIR := /home/ncnc/teoria_comp/TEO_COMP
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -96,16 +90,14 @@ XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 XDG_SESSION_DESKTOP = ubuntu
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
+# makefile
+MAKEFILE_LIST := 
 # environment
 SNAP_REEXEC = 
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 2658
+VSCODE_PID = 6993
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -113,7 +105,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/ncnc:@/tmp/.ICE-unix/1919,unix/ncnc:/tmp/.ICE-unix/1919
+SESSION_MANAGER = local/ncnc:@/tmp/.ICE-unix/2056,unix/ncnc:/tmp/.ICE-unix/2056
 # automatic
 *F = $(notdir $*)
 # environment
@@ -145,37 +137,35 @@ IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-SNAP_COOKIE = 2ggVrYEoJEgJ4C54Sw5uaS4tO6xGIq9rUIWfnAXvE5wI0Tys9NkS
+SNAP_COOKIE = HvN19aWq_96c3Qy1pdaStcftBqQ5azkADPZX3qBmQEpWE0zFPpBH
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/ncnc/.local/bin:/home/ncnc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
-LANGUAGE = en_US
+LANGUAGE = en_US:
 # environment
-LC_MONETARY = en_US.UTF-8
+LC_MONETARY = agr_PE
 # automatic
 ^F = $(notdir $^)
 # environment
 SNAP_USER_COMMON = /home/ncnc/snap/code/common
 # environment
-LC_TIME = en_US.UTF-8
+LC_TIME = agr_PE
 # environment
-SNAP = /snap/code/99
+SNAP = /snap/code/104
 # environment
-INVOCATION_ID = c94b1b7cd5af43bf82f568684f244b57
+INVOCATION_ID = 0443590f7bed40ce971dff48b8649a34
 # environment
-SNAP_REVISION = 99
+SNAP_REVISION = 104
 # environment
 SNAP_REAL_HOME = /home/ncnc
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = ncnc
 # environment
 GNOME_SETUP_DISPLAY = :1
 # environment
-LC_TELEPHONE = en_US.UTF-8
+LC_TELEPHONE = agr_PE
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
@@ -199,9 +189,9 @@ GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.deskto
 # environment
 SNAP_ARCH = amd64
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1937
+SYSTEMD_EXEC_PID = 2095
 # environment
 DISPLAY = :0
 # environment
@@ -213,25 +203,25 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/99
+SNAP_DATA = /var/snap/code/104
 # environment
-SNAP_CONTEXT = 2ggVrYEoJEgJ4C54Sw5uaS4tO6xGIq9rUIWfnAXvE5wI0Tys9NkS
+SNAP_CONTEXT = HvN19aWq_96c3Qy1pdaStcftBqQ5azkADPZX3qBmQEpWE0zFPpBH
 # environment
-MANAGERPID = 1723
+MANAGERPID = 1899
 # environment
-LC_MEASUREMENT = en_US.UTF-8
+LC_MEASUREMENT = agr_PE
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2603
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6953
 # environment
-_ = /snap/code/99/usr/share/code/code
+_ = /snap/code/104/usr/share/code/code
 # environment
-LC_PAPER = en_US.UTF-8
+LC_PAPER = agr_PE
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/ncnc/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:48632
+JOURNAL_STREAM = 8:55993
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -243,21 +233,19 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-827de7db-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-827de7db-1.70.1-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
-# environment
-PAPERSIZE = letter
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = 30d9c6cd
+SNAP_VERSION = 6d9b74a7
 # default
 SUFFIXES := 
 # environment
@@ -269,18 +257,17 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/ncnc/snap/code/99
+SNAP_USER_DATA = /home/ncnc/snap/code/104
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # environment
-LC_IDENTIFICATION = en_US.UTF-8
+LC_IDENTIFICATION = agr_PE
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=133/1024=13%, Rehash=0, Collisions=6/163=4%
- 
+# Load=127/1024=12%, Rehash=0, Collisions=4/154=3%
 
 # Pattern-specific Variable Values
 
@@ -288,54 +275,23 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 263447): 16 files, no impossibilities.
+# . (device 2051, inode 1457625): 9 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
+ 
 
 # Files
 
 # Not a target:
-ejer02.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-programa: ejer01.l ejer02.l ejer03.l main.l
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	gcc -o programa main.o
-
-# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-21 16:46:29.257270668
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-ejer03.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-ejer01.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clear:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	rm -f programa *.c
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -343,51 +299,41 @@ clear:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: main
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
 
 # Not a target:
-main.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-main:
+makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
-main.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-main.o: main.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	gcc -c main.c
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/30=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 208 B / avg = 8 B
-# current buf: size = 8162 B / used = 208 B / count = 26 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 141 B / avg = 8 B
+# current buf: size = 8162 B / used = 141 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 39 / hit rate = 33%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/39=0%
-# Finished Make data base on Wed Jun 22 19:41:48 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Fri Aug 12 18:26:25 2022
 
  
