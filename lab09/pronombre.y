@@ -1,12 +1,17 @@
 %{
 #include <stdio.h>
-int yylex();
-int yyerror (char *s);
+
+void yyerror(char *s);
+int yylex(void);
+
 %}
+
 
 %token PRON
 %token NL
+
 %%
+
 cadena: PRON NL {printf("Se imprime un texto \n");};
 %%
 int yyerror (char *s){

@@ -6,7 +6,7 @@ void yyerror(char *c);
 #include "y.tab.h"
 %}
 
-%%
+%% 
 
 [0-9]+ {
 	yylval = atoi(yytext);

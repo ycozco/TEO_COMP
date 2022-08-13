@@ -1,3 +1,29 @@
 bison -dy ejemplo2_slides.y 
 flex ejemplo2_slides.l 
 gcc -o ejem2_s lex.yy.c y.tab.c -ll
+
+I. EJERCICIOS/PROBLEMAS PROPUESTOS
+La resolución de ejercicios puede hacerse aceptando la expresión una sola vez o también de manera iterativa.
+
+1. Crear un analizador sintáctico que permita la asignación de valor entero a una variable. Por ejemplo se debe
+aceptar: (3 puntos)
+num001=35
+v_0=13
+numero=76
+Aclaración, el nombre de la variable tiene que empezar con letra pero puede tener numero y guion bajo.
+2. Crear un analizador sintáctico que permita reconocer la condicional de un variable con un numero decimal.
+Por ejemplo: (3 puntos)
+if (cantidad == 2.3)
+if (cant002 >= 1.73)
+if (cantidad < 9.3)
+3. Modificar el analizador sintáctico de la calculadora para que pueda recibir la operación modulo y potencia. (3
+puntos)
+4. Crear reglas de producción de gramáticas que solo reconozca “bb” (2 puntos)
+5. Crear reglas de producción de gramáticas que reconozcan igual cantidad de a y también igual cantidad de b.
+(2 puntos)
+6. Crear reglas de producción de gramáticas que reconozcan la expresión número + número. (2 puntos)
+7. Crear reglas de producción de gramáticas que reconozcan la expresión número + variable. (2 puntos)
+Aclaración, considerar que la variable puede tener letras y números. Debe iniciar con letra.
+bison -d step3.y
+flex step3.fl
+gcc lex.yy.c -lfl -o step3
