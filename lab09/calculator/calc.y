@@ -6,6 +6,11 @@
 
 %token NUMBER EVALUAR
 
+%start INICIO
+%left '+' '-'
+%left '*' '/'
+%left '^'
+
 %%
     INICIO
         : EVALUAR '(' Expresion ')' ';'
@@ -30,6 +35,10 @@
         | Expresion '/' Expresion
         {
             $$ = $1 / $3;
+        }
+        | Expresion '^' Expresion
+        {
+            $$ = pow($1, $3);
         }
         | NUMBER
         {
